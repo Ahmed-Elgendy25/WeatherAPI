@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- 3ayz yt3ldl 3leha  -->
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container  ">
+
+
+
+
+      <a class="d-flex ">
+        <img src="./assets/logo.png" class="my-auto" alt="weather logo" />
+        <div class="d-flex flex-column  align-items-center p-2  ">
+          <h3 class=" fw-bold  text-white  ">
+            Weather
+
+
+          </h3>
+          <span class=" fw-light text-white-50">tagline goes here</span>
+        </div>
+
+      </a>
+
+
+
+
+
+
+
+      <button class="navbar-toggler bg-primary " type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  gap-4 p-2 ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active  rounded-4 px-4  " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  rounded-4  px-4 " href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  rounded-4 px-4" href="#">Live cameras</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link  rounded-4 px-4 " href="#">Photos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link  rounded-4 px-4 " href="#">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <section class="hero-section ">
+    <div class="container   d-flex align-items-center">
+      <div class="input-group  mt-5">
+        <input type="text" class="form-control form-control-lg rounded-5  py-3" id="searchLocation"
+          placeholder="Find your location..." aria-label="Recipient's username" aria-describedby="basic-addon2"
+          onchange="handleInputChange()">
+        <button class="btn btn-lg rounded-5  px-5 text-white fs-6" id="findBtn">Find</button>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+  <section class="table-section">
+    <div class="container h-100 ">
+
+      <div class="row g-0" id="demo">
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container   p-5">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control  form-control-lg rounded-5  py-3" id="emailSubscribe"
+              placeholder="Enter your email to subscribe..." aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <button class="btn btn-lg rounded-5  px-2 text-center text-white fs-6" id="subscribeBtn">Subscribe</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-4   ">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-google-plus-g"></i>
+          <i class="fa-brands fa-pinterest"></i>
+
+        </div>
+        <div class="col-md-6">
+          <p class="text-white-50">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="/css/bootstrap.bundle.min.js"></script>
+  <script src="./main.js"></script>
+
+</body>
+
+</html>
